@@ -1,11 +1,11 @@
 # gentoo-x220
 
-I am running a dual-kernel setup (`config/linux-*-x220` and `config/linux-*-desktop`). The X220 kernel is optimized and tries to be minimal, whereas the desktop kernel is just a stock configuration for occasioal desktop usage (i.e., package compilation). The X200 kernel is optimized and works on the X220 as well.
+I am running a dual-kernel setup (`config/linux-*-x220` and `config/linux-*-desktop`). The X220 kernel is optimized and tries to be minimal, whereas the desktop kernel is just a stock configuration for occasional desktop usage (i.e., package compilation, though switching to the X200 and thus abandoning UEFI has made this cumbersome, so I just chroot onto the drive nowadays). The X200 kernel is optimized and works on the X220 as well.
 
 ## Features
 
 - Fast: <10s boot on an SSD
-- Minimal: 88MB of RAM usage with X11 (`dwm`) and WiFi (`wpa_supplicant`), fits in a couple GB of disk space
+- Minimal: 74MB of RAM usage with X11 (`dwm`) and WiFi (`wpa_supplicant`), fits in a couple GB of disk space
 
 ## Kernel config notes
 
@@ -13,9 +13,7 @@ I am running a dual-kernel setup (`config/linux-*-x220` and `config/linux-*-desk
 - LUKS support
 - No bluetooth support
 - No touchpad support, trackpoint only
-- No sound card support
 - Only support for VFAT/ext4
-- USB 2.0 support only (the X220 has no USB 3.0 ports anyway)
 - No initramfs and no modules; everything is built directly into the kernel
 
 ## TODO
