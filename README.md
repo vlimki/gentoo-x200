@@ -11,6 +11,7 @@ I am running a dual-kernel setup (`config/linux-*-x220` and `config/linux-*-desk
 
 - X220 is UEFI-only; X200 is BIOS-only
 - LUKS support
+- SDCard/DVD/CDROM support
 - No bluetooth support
 - No touchpad support, trackpoint only
 - Only support for VFAT/ext4
