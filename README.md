@@ -1,6 +1,6 @@
-# gentoo-x220
+# gentoo-x200
 
-I am running a dual-kernel setup (`config/linux-*-x220` and `config/linux-*-desktop`). The X220 kernel is optimized and tries to be minimal, whereas the desktop kernel is just a stock configuration for occasional desktop usage (i.e., package compilation, though switching to the X200 and thus abandoning UEFI has made this cumbersome, so I just chroot onto the drive nowadays). The X200 kernel is optimized and works on the X220 as well.
+~~I am running a dual-kernel setup (`config/linux-*-x220` and `config/linux-*-desktop`). The X220 kernel is optimized and tries to be minimal, whereas the desktop kernel is just a stock configuration for occasional desktop usage (i.e., package compilation)~~ Switching to the X200 and thus abandoning UEFI has made this cumbersome, so I just chroot onto the drive nowadays. The X200 kernel is optimized and works on the X220 as well.
 
 ## Features
 
@@ -9,7 +9,7 @@ I am running a dual-kernel setup (`config/linux-*-x220` and `config/linux-*-desk
 
 ## Kernel config notes
 
-- X220 is UEFI-only; X200 is BIOS-only
+- X200 kernel is BIOS-only
 - LUKS support
 - SDCard/DVD/CDROM support
 - No bluetooth support
@@ -20,4 +20,4 @@ I am running a dual-kernel setup (`config/linux-*-x220` and `config/linux-*-desk
 ## TODO
 
 - [ ] Flash coreboot/libreboot
-- [x] Switch to systemd-boot from GRUB
+- [x] Switch to systemd-boot from GRUB (old X220 stuff)
