@@ -1,3 +1,5 @@
 # Remove files that shall not be installed from this list.
+iwlwifi-5000-5.ucode
+iwlwifi-5150-2.ucode
 iwlwifi-6000g2a-6.ucode
 iwlwifi-6000g2b-6.ucode

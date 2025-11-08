@@ -1,8 +1,8 @@
 # --- Kernel---
 rm kernel/*
 
-cp /usr/src/linux-6.15.8-exp/.config kernel/linux-6.15.8-x220
-cp /usr/src/linux-6.15.8-desktop/.config kernel/linux-6.15.8-desktop
+cp /usr/src/linux-6.12.41-thinkpad/.config kernel/linux-6.12.41-x200
+cp /usr/src/linux-6.12.41-desktop/.config kernel/linux-6.12.41-desktop
 
 # --- Dotfiles ---
 rm .config/* -rf
