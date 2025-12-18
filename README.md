@@ -1,23 +1,24 @@
 # gentoo-x200
 
-~~I am running a dual-kernel setup (`config/linux-*-x220` and `config/linux-*-desktop`). The X220 kernel is optimized and tries to be minimal, whereas the desktop kernel is just a stock configuration for occasional desktop usage (i.e., package compilation)~~ Switching to the X200 and thus abandoning UEFI has made this cumbersome, so I just chroot onto the drive nowadays. The X200 kernel is optimized and works on the X220 as well.
+The `thinkpad` kernel works on and is optimized for:
+
+1. ThinkPad X200
+2. ThinkPad X61s
+3. ThinkPad X220
 
 ## Features
 
-- Fast: <10s boot on an SSD
+- Fast: <13s boot on an SSD
 - Minimal: 74MB of RAM usage with X11 (`dwm`) and WiFi (`wpa_supplicant`), fits in a couple GB of disk space
 
 ## Kernel config notes
 
-- X200 kernel is BIOS-only
+- Kernel is BIOS-only
 - LUKS support
 - SDCard/DVD/CDROM support
 - No bluetooth support
 - No touchpad support, trackpoint only
-- Only support for VFAT/ext4
+- Only supports VFAT/ext4 filesystems
 - No initramfs and no modules; everything is built directly into the kernel
-
-## TODO
-
-- [ ] Flash coreboot/libreboot
-- [x] Switch to systemd-boot from GRUB (old X220 stuff)
+- Working on Arduino programming support
+- Audio and basic ALSA support
