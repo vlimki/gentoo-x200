@@ -19,3 +19,10 @@
 # required by dev-python/matplotlib-3.10.3::gentoo[-test]
 # required by dev-python/matplotlib (argument)
 >=media-gfx/imagemagick-7.1.1.47 jpeg tiff
+# required by x11-libs/pango-1.57.0::gentoo
+# required by gnome-base/librsvg-2.60.0::gentoo
+# required by app-text/djvu-3.5.29::gentoo
+# required by app-text/zathura-djvu-0.2.10::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.14.1-r1 harfbuzz
